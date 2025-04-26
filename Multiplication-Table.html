@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table{
+            margin: auto;
+            color: aliceblue;
+            text-align: center;
+            
+            width: 30%;
+            padding: 5px;
+            border-radius: 20px;
+            
+        }
+        th,td{
+            text-align: center;
+            border-color: rgb(181, 216, 216);
+            padding: 5px;
+            
+        }
+        table, th, td{
+            border-style:groove;
+            border-radius: 20px;
+            border-width: 5px;
+            box-shadow: 0px 0px 11px rgba(209, 213, 220, 0.66);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        
+    </style>
+    <body style="padding: 7px;background-image: url('https://images4.alphacoders.com/246/thumb-1920-246226.jpg');background-size: cover;">
+        <div id="tab"></div>        
+        
+        <script>
+            let a = window.prompt("Enter a number");
+            a = parseInt(a);
+            let i;
+            tex="<table>";
+            tex=tex+"<tr><th>MULTIPLICATION TABLE</th></tr>"
+            for(i=1;i<11;i++){
+                tex=tex+(`<tr><td>${a} x ${i} = ${a * i}</td></tr>`);
+            }
+            tex=tex+("</table>");
+            document.getElementById("tab").innerHTML=tex;
+        </script>
+    </body>
+</html>
